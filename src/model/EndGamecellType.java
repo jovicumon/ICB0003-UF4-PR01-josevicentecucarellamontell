@@ -1,3 +1,5 @@
+package model;
+
 public enum EndGamecellType {
     Cat("CC"),Cheese("CH");
     private final String symbol;

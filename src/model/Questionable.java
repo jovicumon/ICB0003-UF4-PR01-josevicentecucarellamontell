@@ -1,3 +1,5 @@
+package model;
+
 public interface Questionable {
     /**
      * Method that returns the question for this element.
