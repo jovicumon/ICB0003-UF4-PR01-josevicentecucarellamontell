@@ -46,15 +46,15 @@ public class Main {
      * Maneja la interacción con una celda de pregunta (++ o --).
      */
     private static void handleQuestionableCell(Board board, Scanner scanner) {
-        //obtener la celda de pregunta actual
+        // Obtener la celda de pregunta actual
         Questionable cell = board.getCurrentQuestionableCell();
-        //mostrar la pregunta al usuario
+        // Mostrar la pregunta al usuario
         System.out.println("Pregunta: " + cell.getQuestion());
-        //leer la respuesta del usuario
+        // Leer la respuesta del usuario
         System.out.print("Tu respuesta: ");
         String answer = scanner.nextLine();
 
-        //verificar la respuesta del usuario
+        // Verificar la respuesta del usuario
         if (cell.submitAnswer(answer)) {  //uso del submitAnswer
             System.out.println("¡Correcto!");
             board.addScore(cell instanceof model.PlusCell ? 50 : -50); // Sumar o restar puntos
