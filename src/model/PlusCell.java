@@ -38,7 +38,9 @@ public class PlusCell extends GameCell implements Questionable {
         // Normalizar la respuesta del jugador (eliminar espacios y convertir a minúsculas)
         String normalizedAnswer = answer.replaceAll("\\s", "").toLowerCase();
 
-        // Verificar si la respuesta normalizada coincide con alguna respuesta válida
+        /*Verificar si la respuesta normalizada coincide con alguna respuesta válida
+        La normalización me la ha explicado como hacerla la IA
+        */
         for (String correctAnswer : correctAnswers) {
             String normalizedCorrectAnswer = correctAnswer.replaceAll("\\s", "").toLowerCase();
             if (normalizedAnswer.equals(normalizedCorrectAnswer)) {
