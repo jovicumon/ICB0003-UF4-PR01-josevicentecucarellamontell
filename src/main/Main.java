@@ -12,7 +12,7 @@ public class Main {
 
         while (!board.isGameOver()) {
             System.out.println(board); // Mostrar el tablero
-            System.out.print("Movimiento (W/A/S/D): ");
+            System.out.print("Movimiento (W->Arriba/A->Izquierda/S->Abajo/D->Derecha): ");
             char move = getValidMove(scanner); // Obtener un movimiento válido
             board.moveMouse(move);
 

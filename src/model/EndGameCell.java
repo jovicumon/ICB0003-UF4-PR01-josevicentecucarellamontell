@@ -14,7 +14,6 @@ public class EndGameCell extends GameCell {
         }
     }
 
-
     public EndGamecellType getType() {
         return type;
     }

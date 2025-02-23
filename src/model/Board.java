@@ -49,14 +49,6 @@ public class Board {
         int[] catPos = getValidPosition();
         grid[catPos[0]][catPos[1]] = new EndGameCell(EndGamecellType.Cat); // Gato (CC)
 
-        // Crear una lista de respuestas válidas para la pregunta de PlusCell
-        List<String> validAnswers = new ArrayList<>();
-        validAnswers.add("IntelliJ");
-        validAnswers.add("Eclipse");
-        validAnswers.add("NetBeans");
-        validAnswers.add("Android Studio");
-        validAnswers.add("JDeveloper");
-
         // Colocar una celda PlusCell (++) en una posición aleatoria
         int[] plusPos = getValidPosition();
         grid[plusPos[0]][plusPos[1]] = new PlusCell(50, "Di el nombre de un IDE para programar en JAVA");
